@@ -10,5 +10,4 @@ for Linux systems
   ```sudo apt-get install nodejs```
 - Arch
   ```sudo pacman -Sy nodejs```
-- Solus
-  ```sudo eopkg it nodejs```
+
