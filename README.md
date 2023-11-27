@@ -21,6 +21,10 @@ Install the module using npm. Don't forget to install NPM on your system
   ```
   npm install multer
   ```
+- uuid -> https://www.npmjs.com/package/uuid
+  ```
+  npm install uuid
+  ```
 - slugify -> https://www.npmjs.com/package/slugify
   ```
   npm install slugify
