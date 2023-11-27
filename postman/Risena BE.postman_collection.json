@@ -1,0 +1,681 @@
+{
+	"info": {
+		"_postman_id": "25aaca39-d4e2-4907-a677-75eca07628c0",
+		"name": "Risena BE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30318614"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "sigundul",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sigundul098@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "sigundul098",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "sigundul",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sigundul098@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "sigundul098",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "ryzki@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ryzki123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginUser User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin_ryzki@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization-x",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg3ODA0MDIwLThjNDktNDRkMC04ZDc1LTUwYmQ0Y2U2MzVlYSIsImVtYWlsIjoicnl6a2lAZ21haWwuY29tIiwicm9sZSI6InN1cGVyIGFkbWluIiwiaWF0IjoxNjk4NzQzNzA2fQ.XIIPIOkIcecW7c3NCRtRND8Drn6MzelrjooGtwBzjoo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization-x",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE4MjRlNDA3LTQ2MDYtNDhlNi1hMTk3LWY2Nzc0NDIzMTQzMCIsImVtYWlsIjoiYWRtaW5fcnl6a2lAZ21haWwuY29tIiwicm9sZSI6InN1cGVyIGFkbWluIiwiaWF0IjoxNjk4MzM4MjUzfQ.cQu3Dbaavot4aNRixS3jsXF3RVwd7kGJD9M5-vHZ7Po",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:5000/api/auth/:email",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "sifulan88@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "add product",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ1ZTM4N2I1LTNiNzItNDlhMy1iOTRmLTA0NDlmOGQ0Nzc2YyIsImVtYWlsIjoicm9uYWxkbzA3QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY5NzgxMDU1Mn0.nxSeLf5ZO4ZjwPgoA8JCfSmVdY4KZApaa2sY6vMCT-c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization-x",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ1ZTM4N2I1LTNiNzItNDlhMy1iOTRmLTA0NDlmOGQ0Nzc2YyIsImVtYWlsIjoicm9uYWxkbzA3QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY5NzgxMDU1Mn0.nxSeLf5ZO4ZjwPgoA8JCfSmVdY4KZApaa2sY6vMCT-c",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Dompet Wanita Besar",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "165000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "270",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Dompet",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Produk asli Pekalongan",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "http://localhost:5500/img/hijab1.png",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/products/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add product Copy",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization-x",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ1ZTM4N2I1LTNiNzItNDlhMy1iOTRmLTA0NDlmOGQ0Nzc2YyIsImVtYWlsIjoicm9uYWxkbzA3QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY5NzgxMDU1Mn0.nxSeLf5ZO4ZjwPgoA8JCfSmVdY4KZApaa2sY6vMCT-c",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Tas Wanita",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "600000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "230",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Tas",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Tas Wanita ",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": [
+										"/home/ryzki/.tugas_latihan/week3/risena_be/img/tas3.png",
+										"/home/ryzki/.tugas_latihan/week3/risena_be/img/tas2.png",
+										"/home/ryzki/.tugas_latihan/week3/risena_be/img/tas1.png"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/products/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/products/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update products",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Dompet Batik",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "75000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "dompet batik ",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "170",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "categories",
+									"value": "Kain Batik",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "http://localhost:5500/img/hijab1.png",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/products/dompet-batik",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								"dompet-batik"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update products",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Dompet Wanita Kecil",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "85000",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Dompet Wanita Kecil",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "270",
+									"type": "text"
+								},
+								{
+									"key": "categories",
+									"value": "Dompet",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "http://localhost:5500/img/hijab1.png",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/api/products/dompet-wanita-besar",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								"dompet-wanita-besar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get product by slug",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/products/:slug",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								":slug"
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": "dompet-atm-besar-1699117731494"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n    \"title\": \"celana jeans\",\n    \"price\": 175000,\n    \"stock\": 500\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/products/:slug",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								":slug"
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": "sarung-tenun"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Add User",
+			"item": [
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization-x",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE4MjRlNDA3LTQ2MDYtNDhlNi1hMTk3LWY2Nzc0NDIzMTQzMCIsImVtYWlsIjoiYWRtaW5fcnl6a2lAZ21haWwuY29tIiwicm9sZSI6InN1cGVyIGFkbWluIiwiaWF0IjoxNjk4NTk3NjAyfQ._CEhAD1AzWebGuDDXbqAxERVlwHo-XbXCkbiHtUhOh4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "nanana",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "nanana@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "nanana",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "super admin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/ryzki/Pictures/20210702_225330.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Image Upload",
+			"item": [
+				{
+					"name": "addImage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/ryzki/.tugas_latihan/week3/risena_be/img/couple1.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"image"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
