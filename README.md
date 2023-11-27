@@ -1,6 +1,9 @@
-# RISENA BACKEND
+<h1 align="center">Risena Backend</h1>
 Simple backend implementation using nodejs.
 Don't forget to prepare some tools to run this backend:
+
+![Screenshot 1](images/code.png)
+
 # Install NodeJS
 for Windows systems 
 - Please go to the official website page https://nodejs.org/en/download/current
