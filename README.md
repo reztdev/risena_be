@@ -35,26 +35,26 @@ Install the module using npm. Don't forget to install NPM on your system
 
 - Download postman for interactive with server backend visit site: https://www.postman.com/downloads/
 Download and install postgresql
-- for windows
+# for windows
   install pgadmin4 -> https://www.pgadmin.org/download/pgadmin-4-windows/
-- for linux
-  - Install Postgresql
-    - Ubuntu / Debian
-      https://www.postgresql.org/download/linux/ubuntu/
+# for linux
+- Install Postgresql
+- Ubuntu / Debian
+  https://www.postgresql.org/download/linux/ubuntu/
     
-    - Arch
-      ```
-      sudo pacman -S postgresql
-      ```
-      Start the PostgreSQL server by using systemctl command.
-      ```
-      sudo systemctl start postgresql
-      ```
-      ```
-      sudo systemctl status postgresql
-      ```
-  - Install PgAdmin4
-    - Ubuntu / Debian -> https://www.pgadmin.org/download/pgadmin-4-apt/
+- Arch
+  ```
+  sudo pacman -S postgresql
+  ```
+Start the PostgreSQL server by using systemctl command.
+  ```
+  sudo systemctl start postgresql
+  ```
+  ```
+  sudo systemctl status postgresql
+  ```
+# Install PgAdmin4
+  - Ubuntu / Debian -> https://www.pgadmin.org/download/pgadmin-4-apt/
         ```
         #
         # Setup the repository
@@ -81,9 +81,9 @@ Download and install postgresql
         # Configure the webserver, if you installed pgadmin4-web:
         sudo /usr/pgadmin4/bin/setup-web.sh
         ```
-    - Arch Linux
-      For Arch Linux, we use a web application from Python, installation via pip -> https://pypi.org/project/pgadmin4/
-        ```
-        pip install pgadmin4
-        ```
-      Note: You must be root or admin to install pgadmin4 with pip and run it as root ```sudo pgadmin4```
+ - Arch Linux
+   For Arch Linux, we use a web application from Python, installation via pip -> https://pypi.org/project/pgadmin4/
+   ```
+   pip install pgadmin4
+   ```
+   Note: You must be root or admin to install pgadmin4 with pip and run it as root ```sudo pgadmin4```
