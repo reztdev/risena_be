@@ -1,3 +1,7 @@
+[![StandWithPalestine](https://github.com/Safouene1/support-palestine-banner/blob/master/StandWithPalestine.svg)](https://kitabisa.com/campaign/bantuanuntukgaza)
+[![Twitter Badge](https://img.shields.io/badge/Twitter-Profile-informational?style=flat&logo=twitter&logoColor=white&color=1CA2F1)](https://x.com/turumandem)
+[![ReadMeSupportPalestine](https://github.com/Safouene1/support-palestine-banner/blob/master/banner-support.svg)](https://kitabisa.com/campaign/bantuanuntukgaza)
+
 <h1 align="center">Risena Backend</h1>
 Simple backend implementation using nodejs.
 Don't forget to prepare some tools to run this backend:
